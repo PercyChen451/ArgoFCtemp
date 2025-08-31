@@ -1,0 +1,59 @@
+
+**** 10/09/23 16:12:12 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "TPS259830L_STARTUP-Trans"  [ C:\Users\a0489230\Documents\TPS25983\TPS259830LNRGE_PSPICE_TRANS\tps259830l_trans-pspicefi
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Trans.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../tps259830l_trans.lib" 
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+
+*Analysis directives: 
+.TRAN  0 20m 0 
+.OPTIONS ADVCONV
+.AUTOCONVERGE ITL1=1000 ITL2=1000 ITL4=1000 RELTOL=0.05 ABSTOL=1.0E-6 VNTOL=.001 PIVTOL=1.0E-10 
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\TPS259830L_STARTUP.net" 
+
+
+
+**** INCLUDING TPS259830L_STARTUP.net ****
+* source TPS259830L_TRANS
+X_U2         VOUT N00450 N00209 BFET
+C_C1         0 DVDT/BGATE  3.3n  TC=0,0 
+R_R1         DVDT/BGATE N00450  1 TC=0,0 
+R_R2         N00534 PGOOD  100k TC=0,0 
+C_C6         0 VIN  220uF  
+V_V3         VIN 0  
++PULSE 0 12 2m 2m 2m 1 2
+R_R8         EN 0  125k TC=0,0 
+R_I_IN         VIN N16675287  0.01m  
+R_R7         VIN EN  1MEG TC=0,0 
+R_RIMON         N16675427 0  900 TC=0,0 
+C_CTIMER         0 ITIMER  4.7n  
+R_RLIM         ILIM 0  82 TC=0,0 
+C_COUT         VOUT 0  220u  
+R_RLOAD         0 VOUT  12  
+V_V2         N00534 0 5
+X_U3         DVDT/BGATE EN 0 ILIM N16675427 N16675287 N16675287 N16675287
++  N16675287 ITIMER N16675571 N00209 N00209 N00209 N00209 N00209 N00209 N00209
++  N00209 0 PGOOD N16675832 TPS259830LNRGE
+
+**** RESUMING Trans.cir ****
+.END
+-------$
+ERROR(ORPSIM-16049): Values must be monotonic increasing
+

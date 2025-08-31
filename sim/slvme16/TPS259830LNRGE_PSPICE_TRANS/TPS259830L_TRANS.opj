@@ -1,0 +1,109 @@
+(ExpressProject "TPS259830L_TRANS"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "17.4-2019 P001 (3823098) [10/7/2019]-[10/09/23]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\tps259830l_trans.olb"
+        (Type "Schematic Library")))
+    ("Allegro Netlist Directory" "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify)
+    (File ".\tps259830l_trans.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File
+       ".\tps259830l_trans-pspicefiles\tps259830l_startup\tps259830l_startup.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile
+         ".\tps259830l_trans-pspicefiles\tps259830l_startup\trans.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\tps259830l_trans-pspicefiles\tps259830l_startup\trans.sim"
+        (DisplayName "TPS259830L_STARTUP-Trans")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\tps259830l_trans.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\tps259830l_trans.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (Folder "Logs")
+  (PartMRUSelector
+    (TPS259830LNRGE
+      (FullPartName "TPS259830LNRGE.Normal")
+      (LibraryName
+         "C:\USERS\A0489230\DOCUMENTS\TPS25983\TPS259830LNRGE_PSPICE_TRANS\TPS259830L_TRANS.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (Sw_tClose
+      (FullPartName "Sw_tClose.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4-SILENT\TOOLS\CAPTURE\TCLSCRIPTS\CAPPSPICEMODELAPP\SWITCH\HYBRID\SUPPORTFILES\SWITCH.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName
+         "C:\CADENCE\SPB_17.4-SILENT\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4-SILENT\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4-SILENT\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (BFET
+      (FullPartName "BFET.Normal")
+      (LibraryName
+         "C:\USERS\A0497365\DESKTOP\TPS259830LNRGE_PSPICE_TRANS\NEW FOLDER (2)\TPS259830L_TRANS.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\a0489230\Documents\TPS25983\TPS259830LNRGE_PSPICE_TRANS\tps259830l_trans.dsn")
+      (Path "Design Resources"
+         "C:\Users\a0489230\Documents\TPS25983\TPS259830LNRGE_PSPICE_TRANS\tps259830l_trans.dsn"
+         "TPS259830L_STARTUP")
+      (Path "Design Resources" "Library")
+      (Path "Design Resources" "Library"
+         "C:\Users\a0489230\Documents\TPS25983\TPS259830LNRGE_PSPICE_TRANS\tps259830l_trans.olb")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Model Libraries")
+      (Path "PSpice Resources" "Simulation Profiles"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 478"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 999 24 496")
+        (Scroll "-188 0")
+        (Zoom "29")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\A0489230\DOCUMENTS\TPS25983\TPS259830LNRGE_PSPICE_TRANS\TPS259830L_TRANS.DSN")
+      (Schematic "TPS259830L_STARTUP")
+      (Page "PAGE1")))
+  (MPSSessionName "a0489230"))
